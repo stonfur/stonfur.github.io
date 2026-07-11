@@ -2,7 +2,7 @@
 
 这是 Ding Shi / 石丁 的个人学术主页框架，计划部署到 <https://stonfur.github.io>。
 
-本项目基于开源 GitHub Pages 个人学术主页项目改造，主要代码与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)。页面采用常见 Jemdoc 风格学术主页的简洁组织方式，并参考了分类展示论文与专利的做法。原项目的 GPL-3.0 `LICENSE` 已保留。
+本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
 当前版本只搭建框架。个人简介、论文、专利、奖励、项目、经历、新闻和学术服务均为 `TODO`，需要由主页所有者填写；项目中不包含参考主页作者的个人数据、照片或学术成果。
 
@@ -40,7 +40,7 @@
 
 ## 添加项目
 
-在 `projects.html` 中复制一个 `<article class="item">` 区块，填写项目名称、角色、资助来源、时间和简介。
+在 `projects.html` 中复制一个 `<div class="item">` 区块，填写项目名称、角色、资助来源、时间和简介。
 
 ## 添加奖励
 
@@ -48,7 +48,7 @@
 
 ## 替换头像
 
-将自己的照片命名为 `profile.jpg`，放到 `assets/img/`。建议使用竖版照片；页面会自动裁切并适配移动端。仓库当前不提供虚构头像，也不包含他人的照片。
+将自己的照片命名为 `profile.jpg`，放到 `assets/img/`。建议使用方形或接近方形的照片；页面会自动裁切并适配移动端。仓库当前不提供虚构头像，也不包含他人的照片。
 
 ## 本地预览
 
