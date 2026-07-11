@@ -4,7 +4,7 @@
 
 本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
-当前版本只搭建框架。个人简介、论文、专利、奖励、项目、经历、新闻和学术服务均为 `TODO`，需要由主页所有者填写；项目中不包含参考主页作者的个人数据、照片或学术成果。
+当前版本已根据个人成果清单填入 16 篇期刊论文、11 篇会议论文、10 项已授权专利、9 项在审专利和 3 项主持项目，并从这些成果标题归纳了首页研究方向。职位、单位、邮箱、学术主页链接、个人简介、新闻、学术经历、独立奖励和学术服务仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
 
 ## 页面结构
 
@@ -26,17 +26,17 @@
 
 ## 修改首页信息
 
-打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email、学术主页链接、英文简介、中文简介、研究兴趣、新闻、经历和奖励。保留不需要立即填写的项目为 `TODO` 即可。
+打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email、学术主页链接、英文简介、中文简介、新闻、经历和奖励。首页 Research Interests 与 Selected Publications 已根据成果清单整理，可按需要调整。保留暂时无法确认的项目为 `TODO` 即可。
 
 ## 添加论文
 
-在 `publications.html` 对应的 Selected Publications、Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 模板并替换内容。需要突出主页作者时，可在作者列表中写成 `<strong>Ding Shi</strong>`。首页的 Selected Publications 使用同一模板。
+在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`。首页的 Selected Publications 使用同一紧凑书目格式。
 
 未提供的 PDF、DOI、Code 或 Slides 链接可以先删除；不要长期保留 `href="#"` 占位链接。
 
 ## 添加专利
 
-在 `patents.html` 的“已授权专利”或“申请中专利”列表中复制条目模板，填写专利名称、发明人、专利号或申请号、状态和年份。
+在 `patents.html` 的“已授权专利”或“在审专利”列表中复制一个 `<li>` 条目，填写专利名称、发明人、专利号或申请号以及申请、授权日期。
 
 ## 添加项目
 
