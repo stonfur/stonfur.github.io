@@ -38,9 +38,9 @@ body {
 
 table#tlayout {
   width: 100%;
-  max-width: 1000px;
+  max-width: none;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 0;
   border: none;
   border-collapse: separate;
   border-spacing: 0;
