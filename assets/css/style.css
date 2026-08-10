@@ -247,6 +247,11 @@ table.imgtable td {
   white-space: normal;
 }
 
+.corresponding-marker {
+  font-size: 0.75em;
+  line-height: 0;
+}
+
 .page-note {
   color: #555555;
   font-size: 0.94em;

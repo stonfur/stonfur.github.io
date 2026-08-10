@@ -4,7 +4,7 @@
 
 本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
-当前版本已根据 Notion“成果整理”页面填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充中英文个人简介。在审论文按要求不展示，首页不单独设置 Research Interests 区块。头像旁的职位、单位、邮箱、学术主页链接，以及新闻、学术经历、独立奖励和学术服务仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
+当前版本已根据 Notion“成果整理”页面填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充中英文个人简介。27 篇已发表论文的全文 PDF 存放在 `paper/` 目录，首页及论文页可点击论文题目直接查看；通讯作者以姓名右上角 `*` 标注。在审论文按要求不展示，首页不单独设置 Research Interests 区块。头像旁的职位、单位、邮箱、学术主页链接，以及新闻、学术经历、独立奖励和学术服务仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
 
 ## 页面结构
 
@@ -16,6 +16,7 @@
 ├── projects.html            # 项目
 ├── awards.html              # 奖励与荣誉
 ├── services.html            # 学术服务
+├── paper/                   # 16 篇期刊论文与 11 篇会议论文全文 PDF
 ├── assets/
 │   ├── css/style.css        # 全站样式
 │   └── img/README.md        # 头像放置说明
@@ -30,9 +31,9 @@
 
 ## 添加论文
 
-在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`。首页的 Selected Publications 使用同一紧凑书目格式。
+在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；通讯作者使用 `<strong>D. Shi<sup class="corresponding-marker">*</sup></strong>`。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接。首页的 Selected Publications 使用同一紧凑书目格式。
 
-未提供的 PDF、DOI、Code 或 Slides 链接可以先删除；不要长期保留 `href="#"` 占位链接。
+未提供的 DOI、Code 或 Slides 链接可以先删除；不要长期保留 `href="#"` 占位链接。
 
 ## 添加专利
 
