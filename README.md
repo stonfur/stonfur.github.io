@@ -4,19 +4,18 @@
 
 本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
-当前版本已根据 Notion“成果整理”页面填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充中英文个人简介及学术经历。27 篇已发表论文的全文 PDF 存放在 `paper/` 目录，首页及论文页可点击论文题目直接查看；通讯作者以姓名右上角 `*` 标注。在审论文按要求不展示，首页不设置 Research Interests 或 Awards and Honors 区块，并已按参考主页格式展示 Research Projects。头像旁的职位、单位、邮箱、学术主页链接，以及新闻、独立奖励和学术服务仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
+当前版本已根据“成果整理”材料填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充中英文个人简介、学术经历、博士学位论文和奖励。27 篇已发表论文及博士学位论文的全文 PDF 存放在 `paper/` 目录；论文题目和学位论文题目可直接点击查看全文，通讯作者以姓名右上角 `*` 标注。在审论文按要求不展示，首页不设置 Research Interests 或 Awards and Honors 区块。头像旁的职位、单位、邮箱以及新闻仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
 
 ## 页面结构
 
 ```text
 .
 ├── index.html               # 首页与个人信息
-├── publications.html        # 论文：Selected / Journal / Conference
-├── patents.html             # 专利：已授权 / 申请中
+├── publications.html        # 论文：Journal / Conference，按年份倒序
+├── patents.html             # 专利：已授权 / 在审，按年份倒序
 ├── projects.html            # 项目
 ├── awards.html              # 奖励与荣誉
-├── services.html            # 学术服务
-├── paper/                   # 16 篇期刊论文与 11 篇会议论文全文 PDF
+├── paper/                   # 论文全文 PDF 与博士学位论文 PDF
 ├── assets/
 │   ├── css/style.css        # 全站样式
 │   └── img/README.md        # 头像放置说明
@@ -27,17 +26,17 @@
 
 ## 修改首页信息
 
-打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email、学术主页链接和新闻。首页中英文简介、Academic Experiences 与 Research Projects 已经填写，Research Interests 和 Awards and Honors 区块已按要求删除，Selected Publications 已根据成果清单整理。保留暂时无法确认的项目为 `TODO` 即可。
+打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email 和新闻。首页中英文简介、Academic Experiences（含博士学位论文全文链接）与 Research Projects 已经填写，Research Interests 和 Awards and Honors 区块已按要求删除。保留暂时无法确认的项目为 `TODO` 即可。
 
 ## 添加论文
 
-在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；在每位通讯作者姓名后添加 `<sup class="corresponding-marker">*</sup>`，共同通讯作者均需标注。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接。首页的 Selected Publications 使用同一紧凑书目格式。
+在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。条目前保留 `[J#]` 或 `[C#]` 编号，同一年内按出版时间倒序排列。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；在每位通讯作者姓名后添加 `<sup class="corresponding-marker">*</sup>`，共同通讯作者均需标注。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接。Google Scholar 主页链接放在论文页标题之后。
 
 未提供的 DOI、Code 或 Slides 链接可以先删除；不要长期保留 `href="#"` 占位链接。
 
 ## 添加专利
 
-在 `patents.html` 的“已授权专利”或“在审专利”列表中复制一个 `<li>` 条目，填写专利名称、发明人、专利号或申请号以及申请、授权日期。
+在 `patents.html` 的“已授权专利”或“在审专利”对应年份列表中复制一个 `<li>` 条目，填写专利名称、发明人、专利号或申请号以及申请、授权日期，并保留条目前的 `[P#]` 或 `[A#]` 编号。已授权专利按授权时间倒序，在审专利按申请时间倒序排列。
 
 ## 添加项目
 
@@ -45,7 +44,7 @@
 
 ## 添加奖励
 
-在 `awards.html` 的列表中复制一个 `<li>` 条目，填写年份、奖励名称和授奖单位。
+在 `awards.html` 的列表中复制一个 `<li>` 条目，第一行填写时间与英文奖励名称，第二行填写中文名称。
 
 ## 替换头像
 
