@@ -252,6 +252,12 @@ table.imgtable td {
   line-height: 0;
 }
 
+.project-program {
+  color: #000000;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .page-note {
   color: #555555;
   font-size: 0.94em;

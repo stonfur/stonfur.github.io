@@ -41,7 +41,7 @@
 
 ## 添加项目
 
-在 `projects.html` 的 `<ul>` 中复制一个 `<li>` 条目，按“起止时间、角色、项目名称、资助计划、项目编号、经费”的顺序填写；首页的 Research Projects 使用相同格式。
+在 `projects.html` 的 `<ul>` 中复制一个 `<li>` 条目，按“起止时间、角色、项目名称、资助计划、项目编号、经费”的顺序填写；资助计划名称使用 `<span class="project-program">...</span>` 显示为黑色加粗斜体，首页的 Research Projects 使用相同格式。
 
 ## 添加奖励
 
