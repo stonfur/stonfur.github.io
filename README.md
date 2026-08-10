@@ -4,7 +4,7 @@
 
 本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
-当前版本已根据 Notion“成果整理”页面填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并从这些成果标题归纳了首页研究方向。在审论文按要求不展示。职位、单位、邮箱、学术主页链接、个人简介、新闻、学术经历、独立奖励和学术服务仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
+当前版本已根据 Notion“成果整理”页面填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充中英文个人简介。在审论文按要求不展示，首页不单独设置 Research Interests 区块。头像旁的职位、单位、邮箱、学术主页链接，以及新闻、学术经历、独立奖励和学术服务仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
 
 ## 页面结构
 
@@ -26,7 +26,7 @@
 
 ## 修改首页信息
 
-打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email、学术主页链接、英文简介、中文简介、新闻、经历和奖励。首页 Research Interests 与 Selected Publications 已根据成果清单整理，可按需要调整。保留暂时无法确认的项目为 `TODO` 即可。
+打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email、学术主页链接、新闻、经历和奖励。首页中英文简介已经填写，Research Interests 区块已按要求删除，Selected Publications 已根据成果清单整理。保留暂时无法确认的项目为 `TODO` 即可。
 
 ## 添加论文
 
