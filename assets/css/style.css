@@ -252,6 +252,10 @@ table.imgtable td {
   font-size: 0.94em;
 }
 
+.bio-cn-start {
+  margin-top: 1.4em;
+}
+
 .publication-list li,
 .patent-list li,
 .award-list li {
