@@ -4,7 +4,7 @@
 
 本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
-当前版本已根据“成果整理”材料填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充中英文个人简介、学术经历、博士学位论文和奖励。27 篇已发表论文及博士学位论文的全文 PDF 存放在 `paper/` 目录；论文题目和学位论文题目可直接点击查看全文，通讯作者以姓名右上角 `*` 标注。在审论文按要求不展示，首页不设置 Research Interests 或 Awards and Honors 区块。头像旁的职位、单位、邮箱以及新闻仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
+当前版本已根据“成果整理”材料填入 16 篇已发表期刊论文、11 篇会议论文、15 项已授权专利、8 项在审专利和 3 项主持项目，并已补充证件照、联系方式、中英文个人简介、学术经历、博士学位论文和奖励。27 篇已发表论文及博士学位论文的全文 PDF 存放在 `paper/` 目录；论文题目和学位论文题目可直接点击查看全文，通讯作者以姓名右上角 `*` 标注。在审论文按要求不展示，首页不设置 Research Interests 或 Awards and Honors 区块。新闻仍为 `TODO`。项目中不包含参考主页作者的个人数据、照片或学术成果。
 
 ## 页面结构
 
@@ -18,7 +18,9 @@
 ├── paper/                   # 论文全文 PDF 与博士学位论文 PDF
 ├── assets/
 │   ├── css/style.css        # 全站样式
-│   └── img/README.md        # 头像放置说明
+│   └── img/
+│       ├── profile.jpg      # 首页证件照
+│       └── README.md        # 头像替换说明
 ├── .nojekyll                # 禁用 Jekyll 处理
 ├── LICENSE                  # 原项目 GPL-3.0 许可证
 └── README.md
@@ -26,7 +28,7 @@
 
 ## 修改首页信息
 
-打开 `index.html`，搜索 `TODO` 并替换 Title、Affiliation、Email 和新闻。首页中英文简介、Academic Experiences（含博士学位论文全文链接）与 Research Projects 已经填写，Research Interests 和 Awards and Honors 区块已按要求删除。保留暂时无法确认的项目为 `TODO` 即可。
+打开 `index.html` 可修改姓名、职称、单位、邮箱、学术主页链接、地址和新闻。首页中英文简介、Academic Experiences（含博士学位论文全文链接）与 Research Projects 已经填写，Research Interests 和 Awards and Honors 区块已按要求删除。保留暂时无法确认的新闻为 `TODO` 即可。
 
 ## 添加论文
 
@@ -48,7 +50,7 @@
 
 ## 替换头像
 
-将自己的照片命名为 `profile.jpg`，放到 `assets/img/`。建议使用方形或接近方形的照片；页面会自动裁切并适配移动端。仓库当前不提供虚构头像，也不包含他人的照片。
+当前证件照位于 `assets/img/profile.jpg`。替换时沿用该文件名；页面会从顶部居中裁切为方形并适配移动端。
 
 ## 本地预览
 
