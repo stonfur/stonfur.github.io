@@ -31,7 +31,7 @@
 
 ## 添加论文
 
-在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；通讯作者使用 `<strong>D. Shi<sup class="corresponding-marker">*</sup></strong>`。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接。首页的 Selected Publications 使用同一紧凑书目格式。
+在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；在每位通讯作者姓名后添加 `<sup class="corresponding-marker">*</sup>`，共同通讯作者均需标注。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接。首页的 Selected Publications 使用同一紧凑书目格式。
 
 未提供的 DOI、Code 或 Slides 链接可以先删除；不要长期保留 `href="#"` 占位链接。
 
