@@ -6,6 +6,6 @@ The homepage profile photo is stored in this directory with the filename:
 profile.jpg
 ```
 
-The homepage references it as `assets/img/profile.jpg` and crops it from the top center to fit the reference-style square portrait area.
+The homepage references it as `assets/img/profile.jpg` and preserves the original aspect ratio without cropping.
 
-主页证件照存放为 `profile.jpg`。页面会从图片顶部居中裁切，使竖版照片适配参考页风格的方形头像区域。
+主页证件照存放为 `profile.jpg`。页面会保持原图纵横比例完整显示，不进行裁切。
