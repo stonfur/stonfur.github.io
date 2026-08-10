@@ -11,7 +11,7 @@
 ```text
 .
 ├── index.html               # 首页与个人信息
-├── publications.html        # 论文：Journal / Conference，按年份倒序
+├── publications.html        # 论文：Journal / Conference，按时间倒序连续编号
 ├── patents.html             # 专利：已授权 / 在审，按年份倒序
 ├── projects.html            # 项目
 ├── awards.html              # 奖励与荣誉
@@ -32,7 +32,7 @@
 
 ## 添加论文
 
-在 `publications.html` 对应年份的 Journal Papers 或 Conference Papers 列表中复制一个 `<li>` 条目并替换内容；新年份可复制一个 `<h3>Year YYYY</h3>` 分组。条目前保留 `[J#]` 或 `[C#]` 编号，同一年内按出版时间倒序排列。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；在每位通讯作者姓名后添加 `<sup class="corresponding-marker">*</sup>`，共同通讯作者均需标注。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接。Google Scholar 主页链接放在论文页标题之后。
+在 `publications.html` 的 Journal Papers 或 Conference Papers 单一列表中复制一个 `<li>` 条目并替换内容。论文按出版时间倒序排列，显示编号从列表底部的 `[J1]`、`[C1]` 开始向上连续递增。需要突出主页作者时，作者列表使用 `<strong>D. Shi</strong>`；在每位通讯作者姓名后添加 `<sup class="corresponding-marker">*</sup>`，共同通讯作者均需标注。全文 PDF 放入 `paper/` 目录，并将论文题目包裹为指向该 PDF 的链接；不展示 WOS 或 EI 检索号。Google Scholar 主页链接放在论文页标题之后。
 
 未提供的 DOI、Code 或 Slides 链接可以先删除；不要长期保留 `href="#"` 占位链接。
 
