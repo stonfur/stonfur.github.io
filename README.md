@@ -4,7 +4,7 @@
 
 本项目基于开源 GitHub Pages 个人学术主页项目改造，主要 HTML 布局与视觉基础来自 [ShuaifeiChen273/ShuaifeiChen273.github.io](https://github.com/shuaifeichen273/shuaifeichen273.github.io)：沿用 Jemdoc 风格的左侧分类导航、右侧正文、资料表格、蓝色标题线与紧凑列表。论文的 Journal / Conference 分类和专利的分组组织参考 [liyouSEU/liyouSEU.github.io](https://github.com/liyouseu/liyouseu.github.io)。原项目的 GPL-3.0 `LICENSE` 已保留。
 
-当前版本已根据“成果整理”材料填入 17 篇已发表期刊论文、12 篇会议论文、15 项中国发明专利、1 项已收到授权通知的美国发明专利申请和 3 项主持项目，并已补充证件照、联系方式、中英文个人简介、学术经历、博士学位论文和奖励。29 篇论文及博士学位论文的全文 PDF 存放在 `paper/` 目录；论文题目和学位论文题目可直接点击查看全文，通讯作者以姓名右上角 `*` 标注。在审论文和在审专利按要求不展示，首页不设置 News、Research Interests 或 Awards and Honors 区块。项目中不包含参考主页作者的个人数据、照片或学术成果。
+当前版本已根据“成果整理”材料及后续更新填入 17 篇已发表期刊论文、12 篇会议论文、15 项中国发明专利、1 项已收到授权通知的美国发明专利申请和 5 项主持项目，并已补充证件照、联系方式、中英文个人简介、学术经历、博士学位论文和奖励。29 篇论文及博士学位论文的全文 PDF 存放在 `paper/` 目录；论文题目和学位论文题目可直接点击查看全文，通讯作者以姓名右上角 `*` 标注。在审论文和在审专利按要求不展示，首页不设置 News、Research Interests 或 Awards and Honors 区块。项目中不包含参考主页作者的个人数据、照片或学术成果。
 
 ## 页面结构
 
@@ -42,7 +42,7 @@
 
 ## 添加项目
 
-在 `projects.html` 的 `<ul>` 中复制一个 `<li>` 条目，按“起止时间、角色、项目名称、资助计划、项目编号、经费”的顺序填写；资助计划名称使用 `<span class="project-program">...</span>` 显示为黑色加粗斜体，首页的 Research Projects 使用相同格式。
+在 `projects.html` 的 `<ul>` 中复制一个 `<li>` 条目，按“起止时间、角色、资助计划、资助单位（如需单列）、项目编号（如有）、经费”的顺序填写；暂不展示各项目的具体研究题目。资助计划名称使用 `<span class="project-program">...</span>` 显示为黑色加粗斜体，角色使用 `<strong>PI</strong>` 加粗，首页的 Research Projects 使用相同内容与格式，并须同步更新。国家自然科学基金青年科学基金项目（C类）的项目号为 `6260012791`；南京留学人员科技创新项目（C类）暂不填写项目号。
 
 ## 添加奖励
 
