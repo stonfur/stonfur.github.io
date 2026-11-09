@@ -42,7 +42,7 @@
 
 ## 添加项目
 
-在 `projects.html` 的 `<ul>` 中复制一个 `<li>` 条目，按“起止时间、角色、资助计划、资助单位（如需单列）、项目编号（如有）、经费”的顺序填写；暂不展示各项目的具体研究题目。资助计划名称使用 `<span class="project-program">...</span>` 显示为黑色加粗斜体，角色使用 `<strong>PI</strong>` 加粗，首页的 Research Projects 使用相同内容与格式，并须同步更新。国家自然科学基金青年科学基金项目（C类）的项目号为 `6260012791`；南京留学人员科技创新项目（C类）暂不填写项目号。
+在 `projects.html` 的 `<ul>` 中复制一个 `<li>` 条目，按“起止时间、角色、项目研究题目、资助计划、项目编号（如有）”的顺序填写；不展示项目金额，南京留学人员科技创新项目不再单列资助单位。资助计划名称使用 `<span class="project-program">...</span>` 显示为黑色加粗斜体，角色使用 `<strong>PI</strong>` 加粗，首页的 Research Projects 使用相同内容与格式，并须同步更新。国家自然科学基金青年科学基金项目（C类）的英文题目为 `Research on Reliable Communication for HF Skywave Massive MIMO in Complex Channel Environments`，项目号为 `6260012791`；南京留学人员科技创新项目（C类）的主页英文题目为 `Research on Interference Mitigation for HF Skywave Massive MIMO Communications`，暂不填写项目号。
 
 ## 添加奖励
 
